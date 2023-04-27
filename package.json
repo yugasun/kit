@@ -40,5 +40,17 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "description": "Kit for web develop.",
+  "bugs": {
+    "url": "https://github.com/yugasun/kit/issues"
+  },
+  "homepage": "https://github.com/yugasun/kit#readme",
+  "keywords": [
+    "kit",
+    "web-develop",
+    "crypto"
+  ],
+  "author": "yugasun",
+  "license": "MIT"
 }
