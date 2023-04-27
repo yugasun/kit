@@ -3,5 +3,12 @@
   "useWorkspaces": true,
   "version": "independent",
   "changelog": true,
-  "conventionalCommits": true
+  "conventionalCommits": true,
+  "command": {
+    "version": {
+      "allowBranch": "main",
+      "message": "chore(release): publish",
+      "conventionalCommits": true
+    }
+  }
 }

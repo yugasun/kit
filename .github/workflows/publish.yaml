@@ -48,6 +48,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      # ------- git login
+      - name: Git Identity
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
+        env:
+          GITHUB_TOKEN: ${{ secrets.YUGASUN_GITHUB_TOKEN }}
       # ------- lerna version
       # 将`npx`替换为`pnpm exec`
       # 参考issue: https://github.com/mysticatea/npm-run-all/issues/209
