@@ -1,0 +1,27 @@
+{
+  "name": "@ygkit/crypto",
+  "version": "0.1.0",
+  "description": "crypto",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yugasun/kit.git",
+    "directory": "packages/crypto"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "run-p build-only",
+    "test:unit": "vitest",
+    "test-only": "vitest --run",
+    "build-only": "vite build",
+    "prepublishOnly": "run-p test-only build-only"
+  },
+  "peerDependencies": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dist"
+  ]
+}

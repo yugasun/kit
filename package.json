@@ -1,0 +1,44 @@
+{
+  "name": "kit",
+  "version": "0.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yugasun/kit.git"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prestart": "lerna run build",
+    "start": "vite",
+    "dev": "lerna run dev",
+    "build": "lerna run build",
+    "test": "lerna run test-only",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@peculiar/webcrypto": "^1.4.3",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@types/node": "^18.16.1",
+    "@ygkit/crypto": "workspace:*",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "happy-dom": "^9.9.2",
+    "husky": "^8.0.3",
+    "lerna": "^6.6.1",
+    "npm-run-all": "^4.1.5",
+    "only-allow": "^1.1.1",
+    "prettier": "^2.8.8",
+    "rimraf": "^4.4.1",
+    "tsx": "^3.12.6",
+    "typescript": "~4.8.4",
+    "vite": "^4.3.3",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.30.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
